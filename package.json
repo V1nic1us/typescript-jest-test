@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Project created to apply jest concepts in typescript",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "jest",
+    "test:silent": "jest --watchAll --silent --noStackTrace"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/V1nic1us/typescript-jest-test.git"
