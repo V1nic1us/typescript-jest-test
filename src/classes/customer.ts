@@ -1,17 +1,17 @@
 import { IndividualCustomerProtocol, EnterpriseCustomerProtocol, CustomerOrder } from '../interfaces/customer-protocol';
 
 export class IndividualCustomer implements IndividualCustomerProtocol, CustomerOrder {
-  firstname: string;
+  firstName: string;
   lastName: string;
   cpf: string;
 
-  constructor(firstname: string, lastName: string, cpf: string) {
-    this.firstname = firstname;
+  constructor(firstName: string, lastName: string, cpf: string) {
+    this.firstName = firstName;
     this.lastName = lastName;
     this.cpf = cpf;
   }
   getName(): string {
-    return this.firstname + ' ' + this.lastName;
+    return this.firstName + ' ' + this.lastName;
   }
   getIDN(): string {
     return this.cpf;
